@@ -1,9 +1,41 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.16">
   <diagram name="第 1 页" id="TolP7jTIvtSe04NQRKAJ">
-    <mxGraphModel>
+    <mxGraphModel dx="984" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="qb3vGGkV9nDEWLTlR3LK-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qb3vGGkV9nDEWLTlR3LK-7" target="qb3vGGkV9nDEWLTlR3LK-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qb3vGGkV9nDEWLTlR3LK-16" value="服务器传输" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qb3vGGkV9nDEWLTlR3LK-12">
+          <mxGeometry x="0.32" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qb3vGGkV9nDEWLTlR3LK-7" value="&lt;strong&gt;起点&lt;/strong&gt;：从“用户输入”开始，输入可以是语音指令、文本或图像。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="120" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qb3vGGkV9nDEWLTlR3LK-13" value="通过后端交互处理" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qb3vGGkV9nDEWLTlR3LK-8" target="qb3vGGkV9nDEWLTlR3LK-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qb3vGGkV9nDEWLTlR3LK-8" value="&lt;strong&gt;多模态数据处理&lt;/strong&gt;：展示接收输入后，传输到多模态大模型进行数据处理，生成控制指令。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="155" y="220" width="130" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qb3vGGkV9nDEWLTlR3LK-14" value="llava模型" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qb3vGGkV9nDEWLTlR3LK-9" target="qb3vGGkV9nDEWLTlR3LK-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qb3vGGkV9nDEWLTlR3LK-9" value="&lt;strong&gt;控制指令生成&lt;/strong&gt;：标明通过LLAVA模型生成标准化的API指令。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="320" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qb3vGGkV9nDEWLTlR3LK-15" value="服务器" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="qb3vGGkV9nDEWLTlR3LK-10" target="qb3vGGkV9nDEWLTlR3LK-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qb3vGGkV9nDEWLTlR3LK-10" value="&lt;strong&gt;执行指令&lt;/strong&gt;：车床接收到API指令后，执行相应操作（如调节转速、监测刀具）。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qb3vGGkV9nDEWLTlR3LK-11" value="&lt;strong&gt;反馈&lt;/strong&gt;：将车床执行结果（如状态信息）反馈给用户。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="525" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
