@@ -1,9 +1,49 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.2">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.8.3">
   <diagram name="第 1 页" id="oa3E-5xaEMp2NcMLAzMg">
-    <mxGraphModel>
+    <mxGraphModel dx="984" dy="659" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="NvHfWwe5XngPI-sopP06-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NvHfWwe5XngPI-sopP06-1" target="NvHfWwe5XngPI-sopP06-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-1" value="在滚筒扫描、CT扫描和SEM成像设备上采集岩心的多模态图像数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NvHfWwe5XngPI-sopP06-2" target="NvHfWwe5XngPI-sopP06-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-2" value="中心计算单元接收图像数据后，对数据进行去噪和归一化处理，提高图像的清晰度和一致性，确保输入数据质量" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="180" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NvHfWwe5XngPI-sopP06-3" target="NvHfWwe5XngPI-sopP06-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-3" value="将预处理后的图像输入微调后的SAM模型，使用该模型进行智能分割。" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="340" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NvHfWwe5XngPI-sopP06-4" target="NvHfWwe5XngPI-sopP06-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-4" value="将经SAM分割得到的图像输入基于Show-o结构的多模态大模型，结合实验数据（如矿物组成和物性数据）进行微调。" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="400" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-5" value="基于Show-o模型的分析结果，系统生成详细的岩性分析报告，包括储层评价参数、孔隙结构特征等，为储层开发设计提供科学依据。该结果可用于油气藏的储层评价、流体流动研究和开采方案设计等场景" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="245" y="540" width="310" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" target="NvHfWwe5XngPI-sopP06-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="110" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-13" value="yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="NvHfWwe5XngPI-sopP06-12">
+          <mxGeometry x="-0.0105" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NvHfWwe5XngPI-sopP06-16" value="设备是否在岩心采集完成并上传至中心计算单元" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="70" width="155" height="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
